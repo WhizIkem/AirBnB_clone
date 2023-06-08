@@ -13,7 +13,7 @@
 ## Command Interpreter for Python ##
 A command line interpreter (cmd) for python is a shell that basically performs Read, Evaluate, Print and Loop (REPL) through-out its operation. It allows commands from the user and then executes them The cmd module builds custom shells for a user to work with a program
 
-Below is an example from Python Documenation site
+Below is an example from Python Documentation site
     import cmd, sys
     from turtle import *
 

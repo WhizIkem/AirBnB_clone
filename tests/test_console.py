@@ -29,7 +29,8 @@ class TestConsole(unittest.TestCase):
         with patch('sys.stdout', new=StringIO()) as f:
             self.console.onecmd("create User")
             output = f.getvalue().strip()
-            self.assertRegex(output, r"^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$")
+            self.assertRegex(output, r"^[0-9a-f]{8}-([0-9a-f]{4}-)
+                             {3}[0-9a-f]{12}$")
 
     def test_show(self):
         with patch('sys.stdout', new=StringIO()) as f:
@@ -77,4 +78,3 @@ class TestConsole(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
